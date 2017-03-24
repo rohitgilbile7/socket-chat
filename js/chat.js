@@ -1,16 +1,4 @@
 
-    $(document).ready(function(){
-        $('.chat_window').hide();
-    })
-   		var $wysiwyg = $('.emojis-wysiwyg').emojiarea({wysiwyg: true});
-
-   		var $wysiwyg_value = $('#emojis-wysiwyg-value');
-   		$wysiwyg.on('change', function() {
-   			$wysiwyg_value.text($(this).val());
-    	});
-   		$wysiwyg.trigger('change');
-
-      
 var socket= io();
 function setUsername(){
   socket.emit('setUsername',document.getElementById('name').value);

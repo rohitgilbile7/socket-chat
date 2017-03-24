@@ -47,5 +47,20 @@
               </div>
           </li>
     </div>
+    <script>
+
+        $(document).ready(function(){
+            $('.chat_window').hide();
+        })
+       		var $wysiwyg = $('.emojis-wysiwyg').emojiarea({wysiwyg: true});
+
+       		var $wysiwyg_value = $('#emojis-wysiwyg-value');
+       		$wysiwyg.on('change', function() {
+       			$wysiwyg_value.text($(this).val());
+        	});
+       		$wysiwyg.trigger('change');
+
+
+    </script>
 </body>
 </html>
