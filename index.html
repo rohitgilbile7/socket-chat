@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Socket chat Example- Rohit Gilbile</title>
+  </head>
+      <link rel="stylesheet" href="http://127.0.0.1/socket-chat/css/jquery.emojiarea.css">
+      <link rel="stylesheet" href="http://127.0.0.1/socket-chat/css/stylesheet.css">
+      <link rel="stylesheet" href="http://127.0.0.1/socket-chat/css/chat.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script src="http://127.0.0.1/socket-chat/js/jquery.emojiarea.js"></script>
+		  <script src="http://127.0.0.1/socket-chat/packs/basic/emojis.js"></script>
+		  <link rel="stylesheet" href="http://127.0.0.1/socket-chat/fontello/css/fontello.css">
+	   <script src="/socket.io/socket.io.js"></script>
+     <script src="http://127.0.0.1/socket-chat/js/chat.js"></script>
+<body>
+  <div id="error-container"></div>
+    <div class="writename">
+       <input id="name" type="text" name="name" value="" placeholder="Enter your name!">
+       <button type="button" name="button" onclick="setUsername()">Let me chat!</button>
+    </div>
+
+<div class="chat_window">
+  <input type="hidden" id="Txtusername" />
+
+    <div class="top_menu">
+        <div class="buttons">
+            <div class="button close"></div>
+            <div class="button minimize"></div>
+            <div class="button maximize"></div>
+        </div>
+        <div class="title">Chat   <small id="welcomeUser" class="right"> </small></div>
+
+    </div>
+      <ul class="messages"></ul>
+      <div class="bottom_wrapper clearfix">
+            <textarea rows="5" id="message"  name="name"  class="emojis-wysiwyg"></textarea>
+              <div class="send_message"><div class="icon"></div>
+                <div class="text" onclick="sendMessage()">Send</div>
+        </div>
+
+    </div>
+  </div>
+    <div class="message_template">
+        <li class="message" id="">
+              <div class="cname avatar"></div>
+              <div class="text_wrapper">
+                  <div class="text"></div>
+              </div>
+          </li>
+    </div>
+</body>
+</html>

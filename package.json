@@ -1,0 +1,28 @@
+{
+  "name": "socket-chat",
+  "version": "1.0.0",
+  "description": "This socket chat developed with node js, socket.io for realtime chat demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "sudo nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitgilbile7/socket-chat.git"
+  },
+  "keywords": [
+    "socket",
+    "chat",
+    "node",
+    "js",
+    "realtime",
+    "chat",
+    "socket.io"
+  ],
+  "author": "Rohit Gilbile <rohitgilbile7@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohitgilbile7/socket-chat/issues"
+  },
+  "homepage": "https://github.com/rohitgilbile7/socket-chat#readme"
+}
